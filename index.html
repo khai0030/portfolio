@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body> 
     <div id="sidebar">
@@ -15,13 +17,54 @@
         </div>
 
         <ul>
-            <li>Home</li>
-            <li>Themes</li>
-            <li>About Me</li>
-            <li>Contact Me</li>
-            <li>Socials</li>
+            <li><a href="index.html">Home</a></li>
+            <li><button class="dropbtn">Themes</button></li>
+                <div class="dropdown-content">
+                    <a href="#">Portraits</a>
+                    <a href="#">Nature</a>
+                    <a href="#">Jewelry</a>
+                    <a href="#">Astrophotography</a>
+                    <a href="#">Friends</a>
+                    <a href="#">Food</a>
+                    <a href="#">Misc</a>
+                </div>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><button class="dropbtn">Socials</button></li>
+                <div class="dropdown-content">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-behance"></a>
+                </div>
         </ul>
     </div>
     
+    <header>
+        <img src="images/Logo.png" id="logo">
+        <p class="quote">"The purpose of art is washing
+            the dust of daily life off our souls."</p>
+        <p class="picasso">Pablo Picasso</p>
+    </header>
+<section class="info">
+    <img src="images/me.jpg">
+    <p>Hi! I'm Elsa and one thing I love the most is appreciating the little things around me. I like to capture them in pictures and share the art I saw In them.</p>
+</section>
+<div class="homepagepics">
+    <img src="images/pics/nature/nature12.JPG" alt="naturepic">
+    <img src="images/pics/food/food11.JPG" alt="foodpic">
+    <img src="images/pics/astro/moon1.JPG" alt="moonpic">
+    <img src="images/pics/jewelry/jewel6" alt="jewelrypic">
+    <img src="images/pics/friends/friends6.JPG" alt="friendspic">
+    <img src="images/pics/nature/nature9.JPG" alt="naturepic">
+    <img src="images/pics/portraits/port8.JPG" alt="portraitpic">
+    <img src="images/pics/misc/misc8.JPG" alt="miscpic">
+    <img src="images/pics/jewelry/jewel5.JPG" alt="jewelrypic"> <!--only displayed on tablet-->
+</div>
+<a href="#logo"><img src="images/Asset 2.png" class="arrow" alt="backtotop"></a>
+
+<footer>
+
+</footer>
 </body>
 </html>
