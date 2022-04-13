@@ -7,61 +7,76 @@
     <title>Portfolio</title>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function show() {
+          document.getElementById('sidebar').classList.toggle('active');
+        }
+      </script>
+     
 </head>
+
 <body> 
+    
     <header>
-        <img src="images/Logo.png" id="logo">
-    <div id="sidebar">
-        <div class="toggle-btn">
+        <img src="images/Logo.png" class="logo">
+
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <ul>
+
+            
+        <ul id="menu">
             <li><a href="index.html">Home</a></li>
-            <li><button class="dropbtn">Themes</button></li>
-                <div class="dropdown-content">
-                    <a href="portraits.html">Portraits</a>
-                    <a href="nature.html">Nature</a>
-                    <a href="jewelry.html">Jewelry</a>
-                    <a href="astro.html">Astrophotography</a>
-                    <a href="friends.html">Friends</a>
-                    <a href="food.html">Food</a>
-                    <a href="misc.html">Misc</a>
-                </div>
+            <li class="themes">Themes 
+                <ul class="dropdown1">
+                    <li><a href="portraits.html">Portraits</a></li>
+                    <li><a href="nature.html">Nature</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="astro.html">Astrophotography</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="misc.html">Misc</a></li>
+                </ul>
+            </li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
-            <li><button class="dropbtn">Socials</button></li>
-                <div class="dropdown-content">
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-pinterest"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-behance"></a>
-                </div>
+            <li class="socials">Socials
+                <ul class="dropdown2">
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-behance"></a></li>
+                </ul>
+            </li>
         </ul>
     </div>
+
     </header>
     
     <section class="quote">
-        <p class="pquote">"The purpose of art is washing
+        <p class="pquote"> "The purpose of art is washing
             the dust of daily life off our souls."</p>
-        <p class="picasso">Pablo Picasso</p>
+        <p class="picasso">-Pablo Picasso</p>
     </section>
    
 <section class="info">
-    <img src="images/me.jpg">
+    <img src="images/me.jpg" alt="me" class="me">
     <p>Hi! I'm Elsa and one thing I love the most is appreciating the little things around me. I like to capture them in pictures and share the art I saw In them.</p>
 </section>
 <div class="homepagepics">
     <img src="images/pics/nature/nature12.JPG" alt="naturepic">
     <img src="images/pics/food/food11.JPG" alt="foodpic">
     <img src="images/pics/astro/moon1.JPG" alt="moonpic">
-    <img src="images/pics/jewelry/jewel6" alt="jewelrypic">
+    <img src="images/pics/jewelry/jewel6.JPG" alt="jewelrypic">
     <img src="images/pics/friends/friends6.JPG" alt="friendspic">
     <img src="images/pics/nature/nature9.JPG" alt="naturepic">
     <img src="images/pics/portraits/port8.JPG" alt="portraitpic">
     <img src="images/pics/misc/misc8.JPG" alt="miscpic">
-    <img src="images/pics/jewelry/jewel5.JPG" alt="jewelrypic"> <!--only displayed on tablet-->
+    <img src="images/pics/jewelry/jewel5.JPG" alt="jewelrypic" class="desktopipadonly"> <!--only displayed on tablet-->
 </div>
 
 <div class="skip">

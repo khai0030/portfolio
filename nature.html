@@ -11,35 +11,40 @@
 
 <body> 
     <header>
-        <img src="images/Logo.png" id="logo">
+        <img src="images/Logo.png" class="logo">
 
-    <div id="sidebar">
-        <div class="toggle-btn">
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <ul>
+
+            
+        <ul id="menu">
             <li><a href="index.html">Home</a></li>
-            <li><button class="dropbtn">Themes</button></li>
-                <div class="dropdown-content">
-                    <a href="portraits.html">Portraits</a>
-                    <a href="nature.html">Nature</a>
-                    <a href="jewelry.html">Jewelry</a>
-                    <a href="astro.html">Astrophotography</a>
-                    <a href="friends.html">Friends</a>
-                    <a href="food.html">Food</a>
-                    <a href="misc.html">Misc</a>
-                </div>
+            <li>Themes 
+                <ul class="dropdown1">
+                    <li><a href="portraits.html">Portraits</a></li>
+                    <li><a href="nature.html">Nature</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="astro.html">Astrophotography</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="misc.html">Misc</a></li>
+                </ul>
+            </li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
-            <li><button class="dropbtn">Socials</button></li>
-                <div class="dropdown-content">
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-pinterest"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-behance"></a>
-                </div>
+            <li>Socials
+                <ul class="dropdown2">
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-behance"></a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     </header>
